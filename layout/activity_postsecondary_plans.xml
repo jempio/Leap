@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFDFCB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/graduation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Post Secondary"
+            android:textColor="#523e32"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/Goal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Goal Plans"
+            android:textColor="#523e32"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/goalPlan1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/books"
+                    android:paddingTop="25dp"
+                    android:text="High School Course Selection"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/goalPlan2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/clipboard"
+                    android:paddingTop="25dp"
+                    android:text="Requirements"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+                <Button
+                    android:id="@+id/goalPlan3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/applications2"
+                    android:paddingTop="25dp"
+                    android:text="Applications"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+                <Button
+                    android:id="@+id/goalPlan4"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/programs"
+                    android:paddingTop="25dp"
+                    android:text="Programs"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/resources_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Resources"
+            android:textColor="#523e32"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/resources1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/residence"
+                    android:paddingTop="25dp"
+                    android:text="Requirements"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+                <Button
+                    android:id="@+id/resources2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/school"
+                    android:paddingTop="25dp"
+                    android:text="Which School?"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+                <Button
+                    android:id="@+id/resources3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/thinking"
+                    android:paddingTop="25dp"
+                    android:text="Decison Making"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+                <Button
+                    android:id="@+id/resources4"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/goalplanbutton"
+                    android:drawableTop="@drawable/scholarships"
+                    android:paddingTop="25dp"
+                    android:text="Scholarships"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32" />
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/arthur_graduation"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/fwog" />
+
+
+
+
+</RelativeLayout>

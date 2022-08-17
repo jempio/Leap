@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#FF8139</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="AppTheme">
+        <item name="android:textColor">@color/my_spinner_text_color</item>
+    </style>
+    <color name="my_spinner_text_color">#000000</color>
+
+</resources>

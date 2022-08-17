@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDFCB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/top_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/orange_bar" />
+
+                <TextView
+                    android:id="@+id/goal_leap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leap!"
+                    android:textColor="#523E32"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    app:layout_constraintTop_toTopOf="@id/top_bar"
+                    app:layout_constraintBottom_toBottomOf="@id/top_bar"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/currency_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/currencyimage" />
+
+                <TextView
+                    app:layout_constraintLeft_toLeftOf="@id/currency_bg"
+                    app:layout_constraintRight_toRightOf="@id/currency_bg"
+                    app:layout_constraintTop_toTopOf="@id/currency_bg"
+                    app:layout_constraintBottom_toBottomOf="@id/currency_bg"
+                    android:id="@+id/flies"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Goal"
+                    android:textColor="#523E32"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+                <HorizontalScrollView
+                    android:id="@+id/whiteBoxContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/smallWhiteRectangle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/small_white_rec" />
+
+                                <ImageView
+                                    android:id="@+id/mediumWhiteRectangle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/medium_white_rectangle1" />
+
+                                <ImageView
+                                    android:id="@+id/whiteRectangle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/white_rec1" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/goalRectangle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/orange_rectangle_home" />
+
+                            <TextView
+                                android:id="@+id/goalName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="45dp"
+                                android:layout_marginLeft="45dp"
+                                android:layout_marginTop="44dp"
+                                android:text="Set a goal!"
+                                android:textColor="#523E32"
+                                android:textSize="18dp"
+                                android:textStyle="italic|bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/redLilypadHome"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="290dp"
+                                android:layout_marginLeft="290dp"
+                                android:layout_marginTop="24dp"
+                                android:src="@drawable/red_lilypad_home"
+                                android:visibility="invisible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/greenLilypadHome"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="290dp"
+                                android:layout_marginLeft="290dp"
+                                android:layout_marginTop="24dp"
+                                android:src="@drawable/green_lilypad_home"
+                                android:visibility="invisible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <ImageView
+                                android:id="@+id/yellowLilypadHome"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginStart="290dp"
+                                android:layout_marginLeft="290dp"
+                                android:layout_marginTop="24dp"
+                                android:src="@drawable/yellow_lilypad_home"
+                                android:visibility="invisible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="112dp"
+                                android:text="Agenda"
+                                android:textColor="#523E32"
+                                android:textSize="22dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/homeContainer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="146dp"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agenda_container"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/taskBox"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <TextView
+                                        android:id="@+id/arrayTextView1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="42dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Add a task!"
+                                        android:textColor="#523E32"
+                                        android:textSize="17dp"
+                                        android:textStyle="italic"
+                                        app:layout_constraintStart_toStartOf="@id/taskBox"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/ButtonOneOne"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <TextView
+                                        android:id="@+id/arrayTextView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="42dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Add a task!"
+                                        android:textColor="#523E32"
+                                        android:textSize="17dp"
+                                        android:textStyle="italic"
+                                        app:layout_constraintStart_toStartOf="@id/agendaRow1"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/ButtonOneTwo"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <TextView
+                                        android:id="@+id/arrayTextView3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="42dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Add a task!"
+                                        android:textColor="#523E32"
+                                        android:textSize="17dp"
+                                        android:textStyle="italic"
+                                        app:layout_constraintStart_toStartOf="@id/agendaRow2"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/ButtonOneThree"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/smallWhiteRectangle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/small_white_rec2" />
+
+                                <ImageView
+                                    android:id="@+id/mediumWhiteRectangle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/medium_white_rectangle" />
+
+                                <ImageView
+                                    android:id="@+id/whiteRectangle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/white_rec" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/goalRectangle2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/orange_rectangle_home" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="45dp"
+                                android:layout_marginLeft="45dp"
+                                android:layout_marginTop="44dp"
+                                android:text="Set a goal!"
+                                android:textColor="#523E32"
+                                android:textSize="18dp"
+                                android:textStyle="italic|bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="115dp"
+                                android:text="Agenda"
+                                android:textColor="#523E32"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/homeContainer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="147dp"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agenda_container2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/taskBox2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <TextView
+                                        android:id="@+id/textView121"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="42dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Add a task!"
+                                        android:textColor="#523E32"
+                                        android:textSize="17dp"
+                                        android:textStyle="italic"
+                                        app:layout_constraintStart_toStartOf="@id/taskBox2"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                    <Button
+                                        android:id="@+id/ButtonTwoOne"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow1-2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <Button
+                                        android:id="@+id/ButtonTwoTwo"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow2-2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_marginTop="5dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <Button
+                                        android:id="@+id/ButtonTwoThree"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/container3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:id="@+id/smallWhiteRectangle3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="visible"
+                                    app:srcCompat="@drawable/small_white_rec3" />
+
+                                <ImageView
+                                    android:id="@+id/mediumWhiteRectangle3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/medium_white_rectangle" />
+
+                                <ImageView
+                                    android:id="@+id/whiteRectangle3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/white_rec" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:id="@+id/goalRectangle3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="20dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/orange_rectangle_home" />
+
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="45dp"
+                                android:layout_marginLeft="45dp"
+                                android:layout_marginTop="44dp"
+                                android:text="Set a goal!"
+                                android:textColor="#523E32"
+                                android:textSize="18dp"
+                                android:textStyle="italic|bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="115dp"
+                                android:text="Agenda"
+                                android:textColor="#523E32"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <LinearLayout
+                                android:id="@+id/homeContainer3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="27dp"
+                                android:layout_marginLeft="27dp"
+                                android:layout_marginTop="147dp"
+                                android:orientation="vertical"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agenda_container3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <ImageView
+                                        android:id="@+id/taskBox3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <TextView
+                                        android:id="@+id/textView1223"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="42dp"
+                                        android:layout_marginLeft="42dp"
+                                        android:layout_marginTop="10dp"
+                                        android:text="Add a task!"
+                                        android:textColor="#523E32"
+                                        android:textSize="17dp"
+                                        android:textStyle="italic"
+                                        app:layout_constraintStart_toStartOf="@id/taskBox3"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                    <Button
+                                        android:id="@+id/ButtonThreeOne"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="15dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow1-3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="5dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <Button
+                                        android:id="@+id/ButtonThreeTwo"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:id="@+id/agendaRow2-3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_marginTop="5dp"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:srcCompat="@drawable/addtask_rectangle" />
+
+                                    <Button
+                                        android:id="@+id/ButtonThreeThree"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="16dp"
+                                        android:layout_marginLeft="16dp"
+                                        android:layout_marginTop="20dp"
+                                        android:background="@drawable/uncheck_circle"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        app:layout_constraintTop_toTopOf="parent" />
+
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/homePondContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/whiteBoxContainer">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textPond"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="45dp"
+                            android:text="Check up on your Pond!"
+                            android:textColor="#523E32"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toTopOf="@+id/homePond"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+
+                        <Button
+                            android:id="@+id/homePondButton"
+                            android:layout_width="347dp"
+                            android:layout_height="160dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="66dp"
+                            android:background="#00FFFFFF"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                        </Button>
+
+                        <ImageView
+                            android:id="@+id/homePond"
+                            android:layout_width="377dp"
+                            android:layout_height="190dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/home_pond"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

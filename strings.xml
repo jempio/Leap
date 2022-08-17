@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Leap_2</string>
+    <string name="spinner_title">spinner_title</string>
+
+    <string name="text1">text1</string>
+    <string name="text2">text2</string>
+    <string name="text3">text3</string>
+
+</resources>

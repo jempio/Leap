@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDFCB">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/top_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/orange_bar" />
+
+                <TextView
+                    android:id="@+id/goal_leap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Shop"
+                    android:textColor="#523E32"
+                    android:textSize="35dp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/currency_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/top_bar"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/top_bar"
+                    app:srcCompat="@drawable/currencyimage" />
+
+                <TextView
+                    android:id="@+id/flies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="200"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="@id/currency_bg"
+                    app:layout_constraintLeft_toLeftOf="@id/currency_bg"
+                    app:layout_constraintRight_toRightOf="@id/currency_bg"
+                    app:layout_constraintTop_toTopOf="@id/currency_bg" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+
+                <TextView
+                    android:id="@+id/friends_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends"
+                    android:textColor="#2B3A27"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ponditems_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="470dp"
+                    android:text="Pond Items"
+                    android:textColor="#2B3A27"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/mango_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/mango_frog" />
+
+                <TextView
+                    android:id="@+id/mango_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Mango"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/mango_frog"
+                    app:layout_constraintTop_toBottomOf="@id/mango_frog" />
+
+                <Switch
+                    android:id="@+id/mango_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="40dp"
+                    android:checked="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/SwitchTheme"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mango_frog" />
+
+                <ImageView
+                    android:id="@+id/ninja_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="85dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/mango_frog"
+                    app:srcCompat="@drawable/ninja" />
+
+                <TextView
+                    android:id="@+id/ninja_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Ninja"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/ninja_frog"
+                    app:layout_constraintTop_toBottomOf="@id/ninja_frog" />
+
+                <Switch
+                    android:id="@+id/ninja_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="40dp"
+                    android:checked="true"
+                    android:text=""
+                    android:textColor="#000000"
+
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/SwitchTheme"
+                    app:layout_constraintLeft_toLeftOf="@id/ninja_frog"
+                    app:layout_constraintTop_toBottomOf="@id/ninja_frog" />
+
+                <ImageView
+                    android:id="@+id/tyrone_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mango_frog"
+                    app:srcCompat="@drawable/tyrone" />
+
+                <TextView
+                    android:id="@+id/tyrone_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Tyrone"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/tyrone_frog"
+                    app:layout_constraintTop_toBottomOf="@id/tyrone_frog" />
+
+                <Button
+                    android:id="@+id/tyrone_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/buybutton"
+                    android:text="BUY"
+                    android:textColor="#FF8139"
+                    android:textSize="22sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tyrone_text" />
+
+                <ImageView
+                    android:id="@+id/pablo_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_marginLeft="115dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/mango_frog"
+                    app:srcCompat="@drawable/pablo" />
+
+                <TextView
+                    android:id="@+id/pablo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="Pablo"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/pablo_frog"
+                    app:layout_constraintTop_toBottomOf="@id/pablo_frog" />
+
+                <Button
+                    android:id="@+id/pablo_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/buybutton"
+                    android:text="BUY"
+                    android:textColor="#FF8139"
+                    android:textSize="22sp"
+                    app:layout_constraintLeft_toLeftOf="@id/pablo_frog"
+                    app:layout_constraintTop_toBottomOf="@id/pablo_text" />
+
+                <ImageView
+                    android:id="@+id/kermit_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    app:layout_constraintLeft_toLeftOf="@id/pablo_frog"
+                    app:layout_constraintTop_toTopOf="@id/ninja_frog"
+                    app:srcCompat="@drawable/kermit" />
+
+                <TextView
+                    android:id="@+id/kermit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Kermit"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/pablo_frog"
+                    app:layout_constraintTop_toBottomOf="@id/kermit_frog" />
+
+                <Button
+                    android:id="@+id/kermit_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/buybutton"
+                    android:text="BUY"
+                    android:textColor="#FF8139"
+                    android:textSize="22sp"
+                    app:layout_constraintLeft_toLeftOf="@id/kermit_frog"
+                    app:layout_constraintTop_toBottomOf="@id/kermit_text" />
+
+                <ImageView
+                    android:id="@+id/mrhopps_frog"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    app:layout_constraintLeft_toLeftOf="@id/mango_frog"
+                    app:layout_constraintTop_toTopOf="@id/kermit_frog"
+                    app:srcCompat="@drawable/mrhopps" />
+
+                <TextView
+                    android:id="@+id/mrhopps_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Mr. Hopps"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/mrhopps_frog"
+                    app:layout_constraintTop_toBottomOf="@id/mrhopps_frog" />
+
+                <Button
+                    android:id="@+id/mrhopps_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/buybutton"
+                    android:text="BUY"
+                    android:textColor="#FF8139"
+                    android:textSize="22sp"
+                    app:layout_constraintLeft_toLeftOf="@id/mango_frog"
+                    app:layout_constraintTop_toBottomOf="@id/mrhopps_text" />
+
+                <ImageView
+                    android:id="@+id/lilypad"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/goalplanbutton"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ponditems_text"
+                    app:srcCompat="@drawable/lilypad" />
+
+                <TextView
+                    android:id="@+id/lilypad_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lily Pads"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lilypad" />
+
+                <Switch
+                    android:id="@+id/lilypad_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="40dp"
+                    android:checked="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/SwitchTheme"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lilypad" />
+
+                <ImageView
+                    android:id="@+id/pinkflower"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/goalplanbutton"
+                    app:layout_constraintLeft_toRightOf="@id/lilypad"
+                    app:layout_constraintTop_toTopOf="@id/lilypad"
+                    app:srcCompat="@drawable/pinkflower" />
+
+                <Switch
+                    android:id="@+id/flower_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:checked="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textOff=""
+                    android:textOn=""
+                    android:theme="@style/SwitchTheme"
+                    app:layout_constraintLeft_toLeftOf="@id/pinkflower"
+                    app:layout_constraintTop_toTopOf="@id/lilypad_switch" />
+
+                <TextView
+                    android:id="@+id/pinkflower_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Flowers"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/pinkflower"
+                    app:layout_constraintTop_toTopOf="@id/lilypad_text" />
+
+
+                <ImageView
+                    android:id="@+id/grass"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/goalplanbutton"
+                    app:layout_constraintLeft_toRightOf="@id/pinkflower"
+                    app:layout_constraintTop_toTopOf="@id/pinkflower"
+                    app:srcCompat="@drawable/grass" />
+
+                <TextView
+                    android:id="@+id/grass_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Grass"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:typeface="sans"
+                    app:layout_constraintLeft_toLeftOf="@id/grass"
+                    app:layout_constraintTop_toTopOf="@id/lilypad_text" />
+
+                <Button
+                    android:id="@+id/grass_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/buybutton"
+                    android:text="BUY"
+                    android:textColor="#FF8139"
+                    android:textSize="22sp"
+                    app:layout_constraintRight_toRightOf="@id/mrhopps_buy"
+                    app:layout_constraintTop_toBottomOf="@id/grass_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

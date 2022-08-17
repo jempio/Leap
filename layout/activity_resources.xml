@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFDFCB">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/resources_text"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_1"
+                android:id="@+id/select_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select two schools to compare!"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/resources_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Decision Making"
+                android:textColor="#523e32"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <Spinner
+                android:id="@+id/spinner_1"
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_text"
+                android:background="#ffa26d"/>
+
+            <Spinner
+                android:id="@+id/spinner_2"
+                android:layout_width="190dp"
+                android:layout_height="100dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/select_text"
+                android:background="#FFA26D"/>
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/spinner_1"
+                app:layout_constraintLeft_toLeftOf="@id/spinner_1"
+                android:id="@+id/location_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:gravity="center_horizontal"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="sans"/>
+
+            <ImageView
+                android:id="@+id/square1"
+                app:layout_constraintTop_toBottomOf="@+id/location_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <ImageView
+                android:id="@+id/square2"
+                app:layout_constraintTop_toTopOf="@+id/square1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/square1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/rank_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ranking in Canada"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="sans"/>
+
+            <ImageView
+                android:id="@+id/square3"
+                app:layout_constraintTop_toBottomOf="@+id/rank_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <ImageView
+                android:id="@+id/square4"
+                app:layout_constraintTop_toTopOf="@+id/square3"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/square3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/acceptance_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acceptance Rate"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="sans"/>
+
+            <ImageView
+                android:id="@+id/square5"
+                app:layout_constraintTop_toBottomOf="@+id/acceptance_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <ImageView
+                android:id="@+id/square6"
+                app:layout_constraintTop_toTopOf="@+id/square5"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/square5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/tuition_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuition Fees"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:typeface="sans"/>
+
+            <ImageView
+                android:id="@+id/square7"
+                app:layout_constraintTop_toBottomOf="@+id/tuition_text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <ImageView
+                android:id="@+id/square8"
+                app:layout_constraintTop_toTopOf="@+id/square7"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinner_rectangle" />
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square1"
+                app:layout_constraintLeft_toLeftOf="@id/square1"
+                app:layout_constraintBottom_toBottomOf="@id/square1"
+                app:layout_constraintRight_toRightOf="@id/square1"
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text1"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square2"
+                app:layout_constraintLeft_toLeftOf="@id/square2"
+                app:layout_constraintBottom_toBottomOf="@id/square2"
+                app:layout_constraintRight_toRightOf="@id/square2"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text2"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square3"
+                app:layout_constraintLeft_toLeftOf="@id/square3"
+                app:layout_constraintBottom_toBottomOf="@id/square3"
+                app:layout_constraintRight_toRightOf="@id/square3"
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text3"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square4"
+                app:layout_constraintLeft_toLeftOf="@id/square4"
+                app:layout_constraintBottom_toBottomOf="@id/square4"
+                app:layout_constraintRight_toRightOf="@id/square4"
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text4"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square5"
+                app:layout_constraintLeft_toLeftOf="@id/square5"
+                app:layout_constraintBottom_toBottomOf="@id/square5"
+                app:layout_constraintRight_toRightOf="@id/square5"
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text5"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square6"
+                app:layout_constraintLeft_toLeftOf="@id/square6"
+                app:layout_constraintBottom_toBottomOf="@id/square6"
+                app:layout_constraintRight_toRightOf="@id/square6"
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text6"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square7"
+                app:layout_constraintLeft_toLeftOf="@id/square7"
+                app:layout_constraintBottom_toBottomOf="@id/square7"
+                app:layout_constraintRight_toRightOf="@id/square7"
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text7"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+            <TextView
+                app:layout_constraintTop_toTopOf="@id/square8"
+                app:layout_constraintLeft_toLeftOf="@id/square8"
+                app:layout_constraintBottom_toBottomOf="@id/square8"
+                app:layout_constraintRight_toRightOf="@id/square8"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text8"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

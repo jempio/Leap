@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDFCB"
+    tools:context=".past_reflection">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/feb_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="February 16"
+                android:textColor="#523e32"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/sunday_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textColor="#523e32"
+                android:textSize="26sp"
+                android:typeface="sans"
+                app:layout_constraintTop_toBottomOf="@id/feb_text"
+                app:layout_constraintLeft_toLeftOf="@id/feb_text"/>
+
+            <ImageView
+                android:id="@+id/smile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/epic_selected"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/feb_text"/>
+
+            <TextView
+                android:id="@+id/thoughts_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thoughts"
+                android:textColor="#523e32"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/sunday_text"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <ImageView
+                android:id="@+id/white_rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/whiteish_rectangle"
+                app:layout_constraintTop_toBottomOf="@id/thoughts_text"
+                app:layout_constraintLeft_toLeftOf="@id/thoughts_text"/>
+
+            <TextView
+                android:id="@+id/reflection_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Today was a GREAT day. My mom made chicken pot pie and it’s my favourite food in the whole wide world. We also started online school today and I finished all my homework for the next few days. I hope I am always this productive!"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:typeface="sans"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="@id/white_rectangle"
+                app:layout_constraintRight_toRightOf="@id/white_rectangle"
+                app:layout_constraintTop_toTopOf="@id/white_rectangle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

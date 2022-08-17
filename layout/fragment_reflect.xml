@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDFCB">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/top_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/orange_bar" />
+
+            <TextView
+                android:id="@+id/goal_leap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leap!"
+                android:textColor="#523E32"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                app:layout_constraintTop_toTopOf="@id/top_bar"
+                app:layout_constraintBottom_toBottomOf="@id/top_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/currency_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/currencyimage" />
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="@id/currency_bg"
+                app:layout_constraintRight_toRightOf="@id/currency_bg"
+                app:layout_constraintTop_toTopOf="@id/currency_bg"
+                app:layout_constraintBottom_toBottomOf="@id/currency_bg"
+                android:id="@+id/flies"
+                android:layout_marginRight="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/calendar_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/calendar_icon" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="March 29, 2020"
+                android:textColor="#523e32"
+                android:textSize="24sp"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/quote"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/quote"
+                android:layout_width="329dp"
+                android:layout_height="74dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/quote"
+                app:layout_constraintBottom_toTopOf="@+id/work_habits"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date" />
+
+
+            <TextView
+                android:id="@+id/work_habits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Habits"
+                android:textColor="#523e32"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/graph"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quote" />
+
+
+            <Button
+                android:id="@+id/graph"
+                android:layout_width="330dp"
+                android:layout_height="146dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/graph"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/rate_instruction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.53"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/work_habits" />
+
+
+            <TextView
+                android:id="@+id/rate_instruction"
+                android:layout_width="370dp"
+                android:layout_height="18dp"
+                android:text="Rate your productivity"
+                android:textColor="#523e32"
+                android:textStyle="italic"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/rating_options"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rating_options"
+                app:layout_constraintTop_toBottomOf="@+id/graph" />
+
+            <ImageView
+                android:id="@+id/rating_options"
+                android:layout_width="330dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toTopOf="@+id/reflect_comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rate_instruction" />
+
+            <LinearLayout
+                android:id="@+id/options"
+                android:layout_width="@+id/rating_options"
+                android:layout_height="@+id/rating_options"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@+id/rating_options"
+                app:layout_constraintEnd_toEndOf="@+id/rating_options"
+                app:layout_constraintStart_toStartOf="@+id/rating_options"
+                app:layout_constraintTop_toTopOf="@+id/rating_options">
+
+                <Button
+                    android:id="@+id/epic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/epic_face_selected" />
+
+                <Button
+                    android:id="@+id/happy"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/happy_face_selected" />
+
+                <Button
+                    android:id="@+id/neutral"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/neutral_face_selected" />
+
+                <Button
+                    android:id="@+id/sad"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sad_face_selected" />
+
+                <Button
+                    android:id="@+id/tired"
+                    android:layout_width="45dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tired_face_selected" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/reflect_instruction"
+                android:layout_width="370dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Record your thoughts"
+                android:textColor="#523e32"
+                android:textStyle="italic"
+                android:typeface="sans"
+                app:layout_constraintBottom_toTopOf="@+id/reflect_comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/graph"
+                app:layout_constraintTop_toBottomOf="@+id/options" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/reflect_comment"
+                android:layout_width="330dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/typingbar"
+                android:textColorHint="#988377"
+                app:layout_constraintBottom_toTopOf="@+id/save_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rate_instruction"
+                app:layout_constraintTop_toBottomOf="@id/reflect_instruction">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:hint="Write about your day..."
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/save_rectangle"
+                android:text="Save"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reflect_comment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

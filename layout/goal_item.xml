@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/task1"
+        android:textAllCaps="false"
+        android:textColor="#523e32"
+        android:textSize="16sp"
+        android:typeface="sans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:background="@drawable/tasksbutton"
+        android:gravity="start"
+        android:paddingLeft="40dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="12dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/circle1"
+        app:layout_constraintTop_toTopOf="@id/task1"
+        app:layout_constraintBottom_toBottomOf="@id/task1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/taskcirclebutton" />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

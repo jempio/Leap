@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFDFCB">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFDFCB">
+
+            <Button
+                android:id="@+id/circle1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="225dp"
+                android:background="@drawable/taskcirclebutton" />
+
+            <Button
+                android:id="@+id/circle2"
+                app:layout_constraintTop_toTopOf="@id/circle1"
+                app:layout_constraintLeft_toLeftOf="@id/circle1"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/taskcirclebutton" />
+            <Button
+                android:id="@+id/circle3"
+                app:layout_constraintTop_toTopOf="@id/circle2"
+                app:layout_constraintLeft_toLeftOf="@id/circle2"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/taskcirclebutton" />
+
+            <Button
+                android:id="@+id/circle4"
+                app:layout_constraintTop_toTopOf="@id/circle3"
+                app:layout_constraintLeft_toLeftOf="@id/circle3"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/taskcirclebutton" />
+
+            <Button
+                android:id="@+id/circle5"
+                app:layout_constraintTop_toTopOf="@id/circle4"
+                app:layout_constraintLeft_toLeftOf="@id/circle4"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/taskcirclebutton" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/highschool_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="High School Course Selection"
+                    android:textColor="#523e32"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/tasks_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Tasks"
+                    android:textColor="#523e32"
+                    android:textSize="34sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/task1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/tasksbutton"
+                    android:paddingLeft="40dp"
+                    android:text="Consult university websites and go to admission requirements"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/task2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/tasksbutton"
+                    android:paddingLeft="40dp"
+                    android:text="Choose a program you are interested in"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/task3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/tasksbutton"
+                    android:paddingLeft="40dp"
+                    android:text="Review the admission requirements for  that program of study"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/task4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/tasksbutton"
+                    android:paddingLeft="40dp"
+                    android:text="Make a course plan of the courses that you need to take to get into the specific program(s) of your choice"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/task5"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/tasksbutton"
+                    android:paddingLeft="40dp"
+                    android:text="When choosing high school courses select ones that pertain to what you need for university"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#523e32"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/savebutton"
+                    android:text="save"
+                    android:textColor="#523e32"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/highschool_text"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:text="High School Course Selection"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="36sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tasks_text"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:text="Tasks"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="34sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/task1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/tasksbutton"-->
+<!--                android:paddingLeft="40dp"-->
+<!--                android:text="Consult university websites and go to admission requirements"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="16sp"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/task2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/tasksbutton"-->
+<!--                android:paddingLeft="40dp"-->
+<!--                android:text="Choose a program you are interested in"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="16sp"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/task3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/tasksbutton"-->
+<!--                android:paddingLeft="40dp"-->
+<!--                android:text="Review the admission requirements for  that program of study"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="16sp"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/task4"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/tasksbutton"-->
+<!--                android:paddingLeft="40dp"-->
+<!--                android:text="Make a course plan of the courses that you need to take to get into the specific program(s) of your choice"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="16sp"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/task5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:layout_gravity="start"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/tasksbutton"-->
+<!--                android:paddingLeft="40dp"-->
+<!--                android:text="When choosing highschool courses select ones that pertain to what you need for university"-->
+<!--                android:textAlignment="textStart"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="16sp"-->
+<!--                android:typeface="sans" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/save"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/savebutton"-->
+<!--                android:text="save"-->
+<!--                android:textColor="#523e32"-->
+<!--                android:textSize="20sp" />-->
+
+<!--        </LinearLayout>-->
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
